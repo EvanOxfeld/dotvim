@@ -9,7 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'ciaranm/detectindent'
+Plugin 'tpope/vim-sleuth'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/delimitMate.vim'
 Plugin 'altercation/vim-colors-solarized'
@@ -18,6 +18,7 @@ Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'MarcWeber/vim-addon-local-vimrc'
+Plugin 'samuelsimoes/vim-jsx-utils'
 
 call vundle#end()
 "filetype plugin indent on
@@ -41,3 +42,11 @@ colorscheme solarized
 
 " vim-jsx
 let g:jsx_ext_required = 0
+
+" vim-jsx-utils
+nnoremap <leader>ja :call JSXEncloseReturn()<CR>
+nnoremap <leader>ji :call JSXEachAttributeInLine()<CR>
+nnoremap <leader>je :call JSXExtractPartialPrompt()<CR>
+nnoremap <leader>jc :call JSXChangeTagPrompt()<CR>
+nnoremap vat :call JSXSelectTag()<CR>
+
