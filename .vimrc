@@ -24,7 +24,7 @@ call vundle#end()
 "filetype plugin indent on
 
 
-" set spell
+set spell
 set number
 "set expandtab
 "set shiftwidth=2
